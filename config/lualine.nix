@@ -57,6 +57,22 @@
             };
           }
           {
+            name = "filetype";
+            extraConfig = {
+              icon_only = true;
+              icon = {
+                align = "right";
+              };
+            };
+            separator.right = "";
+            padding.right = 0;
+            padding.left = 1;
+          }
+          {
+            icons_enabled = true;
+            name = "filename";
+            padding.left = 0;
+            padding.right = 1;
             # file_status = true;
             extraConfig = {
               symbols = {
@@ -68,8 +84,6 @@
               };
             };
             # icon = get_icon()
-            icons_enabled = true;
-            name = "filename";
           }
         ];
 
@@ -127,7 +141,6 @@
           }
         ];
         lualine_y = [
-          { }
         ];
         lualine_z = [
           {
