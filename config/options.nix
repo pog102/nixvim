@@ -16,9 +16,14 @@
               \ execute("normal `\"") |
           \ endif
   '';
-  colorschemes.tokyonight.enable = true;
+  colorschemes = {
+    # tokyonight.enable = true;
+    catppuccin.enable = true;
+  };
   opts = {
-
+    expandtab = true;
+    shiftwidth = 2;
+    tabstop = 2;
     incsearch = true; # Select items found in search
     hlsearch = true; # Highlight searches by default
     ignorecase = true; # Ignore case when searching
@@ -29,9 +34,9 @@
     # nofoldenable = false;
     undofile = true;
     breakindent = true; # Keep indentation for wrapped lines
-    autoindent = true; # Enable auto-indentation
-    smartindent = true; # Enable smart-indentation
-    softtabstop = 0; # Use hard tabs alwaysShowBufferline
+    # autoindent = true; # Enable auto-indentation
+    # smartindent = true; # Enable smart-indentation
+    # softtabstop = 0; # Use hard tabs alwaysShowBufferline
     swapfile = false; # Enable swap files
     clipboard = "unnamedplus";
     foldmethod = "expr";
