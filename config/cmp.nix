@@ -1,6 +1,7 @@
 {
   plugins = {
 
+    lspkind.enable = true;
     cmp_luasnip.enable = true;
     cmp-nvim-lsp.enable = true;
     cmp = {
@@ -13,12 +14,14 @@
           { name = "nvim_lsp"; }
           { name = "luasnip"; } #For luasnip users.
           { name = "path"; }
+          { name = "nerdfont"; }
           { name = "buffer"; }
         ];
         window = {
           completion = {
-            # winhighlight =
-            #   # "FloatBorder:CmpBorder,Normal:CmpPmenu,CursorLine:CmpSel,Search:PmenuSel";
+            winhighlight =
+              # "FloatBorder:"Normal:Pmenu,FloatBorder:Pmenu,CursorLine:PmenuSel,Search:None"CmpBorder,Normal:CmpPmenu,CursorLine:CmpSel,Search:PmenuSel";
+              "Normal:bg,FloatBorder:bg,CursorLine:PmenuSel,Search:None";
             #   "FloatBorder:CmpBorder,Normal:CmpBorder";
             # winhighlight = "Normal:CmpPmenu,FloatBorder:CmpPmenuBorder,CursorLine:PmenuSel,Search:None";
             scrollbar = false;
@@ -26,8 +29,10 @@
             border = [ "╭" "─" "╮" "│" "╯" "─" "╰" "│" ];
           };
 
+
           documentation = {
             border = [ "╭" "─" "╮" "│" "╯" "─" "╰" "│" ];
+            winhighlight = "Normal:bg,FloatBorder:bg";
             # winhighlight =
             #   "FloatBorder:CmpBorder,Normal:CmpPmenu,CursorLine:CmpSel,Search:PmenuSel";
             # "FloatBorder:CmpBorder,Normal:CmpPmenu,CursorLine:CmpSel,Search:PmenuSel";

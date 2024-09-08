@@ -69,12 +69,12 @@
             padding.left = 1;
           }
           {
-            icons_enabled = true;
+            # icons_enabled = true;
             name = "filename";
             padding.left = 0;
             padding.right = 1;
-            # file_status = true;
             extraConfig = {
+              file_status = false;
               symbols = {
                 # modified = " ";
                 modified = "";

@@ -24,6 +24,8 @@
     expandtab = true;
     shiftwidth = 2;
     tabstop = 2;
+    # pumblend = 100;
+    # winblend = 100;
     incsearch = true; # Select items found in search
     hlsearch = true; # Highlight searches by default
     ignorecase = true; # Ignore case when searching

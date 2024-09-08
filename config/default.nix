@@ -14,6 +14,7 @@
     ./options.nix
     ./keymaps.nix
     ./autopairs.nix
+    ./gitsigns.nix
     ./lint.nix
     ./telescope.nix
     ./luasnip.nix
