@@ -60,6 +60,14 @@
     #   };
     # }
     {
+      action = "<cmd>lua vim.lsp.buf.code_action()<CR>";
+      key = "qf";
+      mode = "n";
+      options = {
+        silent = true;
+      };
+    }
+    {
       action = "function() require('dap').continue()";
       key = "<F5>";
       mode = "n";
