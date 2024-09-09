@@ -40,6 +40,38 @@
         };
         #
       };
+      cmdline = {
+        "/" = {
+          mapping = {
+            __raw = "cmp.mapping.preset.cmdline()";
+          };
+          sources = [
+            {
+              name = "buffer";
+            }
+          ];
+        };
+        ":" = {
+          mapping = {
+            __raw = "cmp.mapping.preset.cmdline()";
+          };
+          sources = [
+            {
+              name = "path";
+            }
+            {
+              name = "cmdline";
+              option = {
+                ignore_cmds = [
+                  "Man"
+                  "!"
+                ];
+              };
+            }
+          ];
+        };
+
+      };
       settings = {
         mapping = {
           "<C-Space>" = "cmp.mapping.complete()";
