@@ -11,8 +11,8 @@
       autoEnableSources = true;
       settings = {
         sources = [
-          { name = "nvim_lsp"; }
           { name = "luasnip"; } #For luasnip users.
+          { name = "nvim_lsp"; }
           { name = "path"; }
           { name = "nerdfont"; }
           { name = "buffer"; }

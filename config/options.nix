@@ -18,7 +18,9 @@
   '';
   colorschemes = {
     # tokyonight.enable = true;
-    catppuccin.enable = true;
+    # catppuccin.enable = true;
+    # nord.enable = true;
+    onedark.enable = true;
   };
   opts = {
     expandtab = true;
@@ -42,6 +44,7 @@
     swapfile = false; # Enable swap files
     clipboard = "unnamedplus";
     foldmethod = "expr";
+
     foldexpr = "nvim_treesitter#foldexpr()";
     foldlevel = 20;
     # foldenable = false;
