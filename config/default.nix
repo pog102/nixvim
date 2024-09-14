@@ -13,6 +13,7 @@
     ./marks.nix
     ./treesitter.nix
     ./lsp.nix
+    ./tree-context.nix
     ./options.nix
     ./keymaps.nix
     ./autopairs.nix
