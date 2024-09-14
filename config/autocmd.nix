@@ -12,6 +12,11 @@
     #   pattern = [ "*" ];
     #   callback = { __raw = "silent! loadview"; };
     # }
+    # {
+    #   event = [ "BufWritePre" ];
+    #   pattern = [ "*" ];
+    #   callback = { __raw = "if &filetype == 'help' | wincmd L | wincmd _ | endif"; };
+    # }
     {
       event = [ "BufWritePre" ];
       pattern = [ "*" ];

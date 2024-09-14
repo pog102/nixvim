@@ -9,12 +9,18 @@
       local hl = "DiagnosticSign" .. type
       vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = hl })
     end
+
   '';
   extraConfigVim = ''
     au BufReadPost *
           \ if line("'\"") > 0 && line("'\"") <= line("$") && &filetype != "gitcommit" |
               \ execute("normal `\"") |
           \ endif
+    autocmd BufEnter * if &filetype == 'help' | wincmd L | wincmd _ | endif
+    command! -nargs=1 M execute 'hide Man' <q-args>
+
+
+
   '';
   colorschemes = {
     # tokyonight.enable = true;

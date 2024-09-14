@@ -4,6 +4,8 @@
     ./bufferline.nix
     ./cmp.nix
     ./autocmd.nix
+    # ./leetcode.nix
+    # ./helpview.nix
     ./dashboard.nix
     ./conform.nix
     ./noice.nix

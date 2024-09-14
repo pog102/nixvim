@@ -76,6 +76,38 @@
       };
     }
     {
+      action = "<cmd>wincmd j<CR>";
+      key = "<c-s>";
+      mode = "n";
+      options = {
+        silent = true;
+      };
+    }
+    {
+      action = "<cmd>wincmd h<CR>";
+      key = "<c-a>";
+      mode = "n";
+      options = {
+        silent = true;
+      };
+    }
+    {
+      action = "<cmd>wincmd l<CR>";
+      key = "<c-d>";
+      mode = "n";
+      options = {
+        silent = true;
+      };
+    }
+    {
+      action = "<cmd>wincmd k<CR>";
+      key = "<c-w>";
+      mode = "n";
+      options = {
+        silent = true;
+      };
+    }
+    {
       action = "<cmd>bdelete<CR>";
       key = "d<Tab>";
       mode = "n";
