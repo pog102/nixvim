@@ -20,7 +20,8 @@
     # tokyonight.enable = true;
     # catppuccin.enable = true;
     # nord.enable = true;
-    onedark.enable = true;
+    # onedark.enable = true;
+    kanagawa.enable = true;
   };
   opts = {
     expandtab = true;

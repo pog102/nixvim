@@ -8,7 +8,9 @@
     ./conform.nix
     ./noice.nix
     ./term.nix
+    ./todo.nix
     ./blanklne.nix
+    ./marks.nix
     ./treesitter.nix
     ./lsp.nix
     ./options.nix
