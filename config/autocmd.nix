@@ -17,11 +17,11 @@
     #   pattern = [ "*" ];
     #   callback = { __raw = "if &filetype == 'help' | wincmd L | wincmd _ | endif"; };
     # }
-    {
-      event = [ "BufWritePre" ];
-      pattern = [ "*" ];
-      callback = { __raw = "function(args) require('conform').format({ bufnr = args.buf }) end"; };
-    }
+    # {
+    #   event = [ "BufWritePre" ];
+    #   pattern = [ "*" ];
+    #   callback = { __raw = "function(args) require('conform').format({ bufnr = args.buf }) end"; };
+    # }
     # {
     #   event = [ "bufnewfile" ];
     #   pattern = [ "*.nix" ];

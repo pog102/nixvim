@@ -26,6 +26,16 @@
           shortcut = [
             {
               action = {
+                __raw = "function(path) vim.cmd('Telescope oldfiles') end";
+              };
+              desc = "OldFiles";
+              group = "Label";
+              icon = " ";
+              icon_hl = "@variable";
+              key = "o";
+            }
+            {
+              action = {
                 __raw = "function(path) vim.cmd('Telescope find_files') end";
               };
               desc = "Files";
@@ -35,10 +45,11 @@
               key = "f";
             }
             # {
-            #   action = "Telescope app";
+            #   action = "Old files";
             #   desc = " Apps";
-            #   group = "DiagnosticHint";
-            #   key = "a";
+            #   icon = " ";
+            #   group = "Label";
+            #   key = "o";
             # }
             # {
             #   action = "Telescope dotfiles";

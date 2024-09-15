@@ -117,6 +117,14 @@
     }
 
     {
+      action = "<cmd>bprev<CR>";
+      key = "<S-Tab>";
+      mode = "n";
+      options = {
+        silent = true;
+      };
+    }
+    {
       action = "<cmd>bnext<CR>";
       key = "<Tab>";
       mode = "n";

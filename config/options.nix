@@ -16,12 +16,14 @@
           \ if line("'\"") > 0 && line("'\"") <= line("$") && &filetype != "gitcommit" |
               \ execute("normal `\"") |
           \ endif
-    autocmd BufEnter * if &filetype == 'help' | wincmd L | wincmd _ | endif
-    command! -nargs=1 M execute 'hide Man' <q-args>
 
+    cnoreabbrev h vert h
+    cnoreabbrev m hide Man
 
 
   '';
+  # autocmd BufEnter * if &filetype == 'help' | wincmd L | wincmd _ | endif
+  # command! -nargs=1 M execute 'hide Man' <q-args>
   colorschemes = {
     # tokyonight.enable = true;
     # catppuccin.enable = true;
@@ -33,6 +35,7 @@
     expandtab = true;
     shiftwidth = 2;
     tabstop = 2;
+    splitright=true; # might be split="right";
     # pumblend = 100;
     # winblend = 100;
     incsearch = true; # Select items found in search
