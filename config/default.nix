@@ -5,6 +5,8 @@
     ./cmp.nix
     ./autocmd.nix
     # ./leetcode.nix
+    # NOTE: stilll testing
+    # ./markdown.nix
     ./helpview.nix
     ./dashboard.nix
     ./conform.nix
@@ -12,7 +14,7 @@
     ./term.nix
     ./todo.nix
     ./blanklne.nix
-    ./marks.nix
+    # ./marks.nix
     ./treesitter.nix
     ./lsp.nix
     ./tree-context.nix
