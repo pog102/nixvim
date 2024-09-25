@@ -8,6 +8,7 @@
     # NOTE: stilll testing
     # ./markdown.nix
     ./helpview.nix
+    ./codeium.nix
     ./dashboard.nix
     ./conform.nix
     ./noice.nix

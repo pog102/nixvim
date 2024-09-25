@@ -9,8 +9,8 @@
       local hl = "DiagnosticSign" .. type
       vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = hl })
     end
-
   '';
+
   extraConfigVim = ''
     au BufReadPost *
           \ if line("'\"") > 0 && line("'\"") <= line("$") && &filetype != "gitcommit" |
@@ -35,7 +35,7 @@
     expandtab = true;
     shiftwidth = 2;
     tabstop = 2;
-    splitright=true; # might be split="right";
+    splitright = true; # might be split="right";
     # pumblend = 100;
     # winblend = 100;
     incsearch = true; # Select items found in search
