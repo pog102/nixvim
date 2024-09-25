@@ -2,13 +2,14 @@
 
   # TODO: add normal colors
   extraConfigLua = ''
-    vim.api.nvim_set_hl(0, "CmpItemKindVariable", { fg = "#6CC644" })
-    vim.api.nvim_set_hl(0, "CmpItemKindText", { fg = "#6CC644" })
-    vim.api.nvim_set_hl(0, "CmpItemKindFunction", { fg = "#6CC644" })
-    vim.api.nvim_set_hl(0, "CmpItemKindMethod", { fg = "#6CC644" })
-    vim.api.nvim_set_hl(0, "CmpItemKindKeyword", { fg = "#6CC644" })
-    vim.api.nvim_set_hl(0, "CmpItemKindSnippet", { fg = "#6CC644" })
-    vim.api.nvim_set_hl(0, "CmpItemKindCodeium", { fg = "#6CC641" })
+    vim.api.nvim_set_hl(0, "CmpItemKindVariable", { fg = "#89ddff" })  -- Cyan
+    vim.api.nvim_set_hl(0, "CmpItemKindText", { fg = "#c3e88d" })      -- Light Green
+    vim.api.nvim_set_hl(0, "CmpItemKindFunction", { fg = "#82aaff" })  -- Light Blue
+    vim.api.nvim_set_hl(0, "CmpItemKindMethod", { fg = "#c792ea" })    -- Purple
+    vim.api.nvim_set_hl(0, "CmpItemKindKeyword", { fg = "#f07178" })   -- Red/Pink
+    vim.api.nvim_set_hl(0, "CmpItemKindSnippet", { fg = "#ffcb6b" })   -- Yellow
+    vim.api.nvim_set_hl(0, "CmpItemKindCodeium", { fg = "#56b6c2" })   -- Teal
+
   '';
   plugins = {
 
@@ -37,9 +38,9 @@
           #           })
           # '';
           fields = [
-            "kind"
             "abbr"
-            "menu"
+            "kind"
+            # "menu"
           ];
         };
         sources = [
