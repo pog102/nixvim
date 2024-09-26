@@ -28,6 +28,7 @@
     ./telescope.nix
     ./luasnip.nix
     ./lualine.nix
-    ./skel.nix
+    # ./skel.nix
+    # ./skel-nvim.nix
   ];
 }

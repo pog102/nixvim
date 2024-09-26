@@ -2,6 +2,13 @@
 let
   skelc = pkgs.writeText "skel.c"
     ''
+      /**
+      * File: idk.c
+      * Auther: Ernestas Damanskis
+      * Description: None
+      * Date:
+      * Contact: ernestasdamanskis@gmail.com
+      */
       #include <stdio.h>
       int main(int argc, char *argv[])
       {

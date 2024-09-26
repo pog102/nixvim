@@ -1,5 +1,4 @@
 {
-
   extraConfigLua = ''
     vim.api.nvim_set_hl(0, "CmpItemKindVariable", { fg = "#89ddff" })  -- Cyan
     vim.api.nvim_set_hl(0, "CmpItemKindText", { fg = "#c3e88d" })      -- Light Green
@@ -8,20 +7,20 @@
     vim.api.nvim_set_hl(0, "CmpItemKindKeyword", { fg = "#f07178" })   -- Red/Pink
     vim.api.nvim_set_hl(0, "CmpItemKindSnippet", { fg = "#ffcb6b" })   -- Yellow
     vim.api.nvim_set_hl(0, "CmpItemKindCodeium", { fg = "#56b6c2" })   -- Teal
-
   '';
   plugins = {
-
     lspkind = {
       enable = true;
       # mode = "symbol";
       symbolMap = { Codeium = ""; };
     };
+    cmp-digraphs.enable = true;
     cmp_luasnip.enable = true;
     # cmp-spell.enable = true;
     cmp-dictionary.enable = true;
     cmp-nvim-lsp.enable = true;
 
+    #  ū
     cmp = {
       # snippet.expand = "luasnip";
 
@@ -51,7 +50,7 @@
           { name = "path"; }
           # { name = "nerdfont"; }
           { name = "buffer"; }
-          # { name = "spell"; }
+          { name = "digraphs"; }
           # FIX: how do i 
           # make this work !?!?! 
 
