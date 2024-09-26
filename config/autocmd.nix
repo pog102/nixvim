@@ -1,5 +1,4 @@
 {
-
   autoCmd = [
 
     # {
@@ -25,7 +24,7 @@
     # {
     #   event = [ "bufnewfile" ];
     #   pattern = [ "*.nix" ];
-    #   command = "0r ~/.config/nvim/templates/skel.nix";
+    #   command = "0r ${skelnix}";
     # }
     # {
     #   event = [ "bufnewfile" ];
