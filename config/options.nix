@@ -20,7 +20,7 @@
     cnoreabbrev h vert h
     cnoreabbrev m hide Man
 
-
+ 
   '';
   # autocmd BufEnter * if &filetype == 'help' | wincmd L | wincmd _ | endif
   # command! -nargs=1 M execute 'hide Man' <q-args>
@@ -35,6 +35,8 @@
     expandtab = true;
     shiftwidth = 2;
     tabstop = 2;
+    # spell = true;
+    # spelllang = "en_us";
     splitright = true; # might be split="right";
     # pumblend = 100;
     # winblend = 100;
@@ -50,7 +52,7 @@
     breakindent = true; # Keep indentation for wrapped lines
     # autoindent = true; # Enable auto-indentation
     # smartindent = true; # Enable smart-indentation
-    # softtabstop = 0; # Use hard tabs alwaysShowBufferline
+    # softtabstop = 0; # Use hard tabs "alwaysShowBufferline"
     swapfile = false; # Enable swap files
     clipboard = "unnamedplus";
     foldmethod = "expr";

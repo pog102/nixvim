@@ -1,6 +1,5 @@
 {
 
-  # TODO: add normal colors
   extraConfigLua = ''
     vim.api.nvim_set_hl(0, "CmpItemKindVariable", { fg = "#89ddff" })  -- Cyan
     vim.api.nvim_set_hl(0, "CmpItemKindText", { fg = "#c3e88d" })      -- Light Green
@@ -19,7 +18,8 @@
       symbolMap = { Codeium = ""; };
     };
     cmp_luasnip.enable = true;
-
+    # cmp-spell.enable = true;
+    cmp-dictionary.enable = true;
     cmp-nvim-lsp.enable = true;
 
     cmp = {
@@ -39,6 +39,7 @@
           # '';
           fields = [
             "abbr"
+
             "kind"
             # "menu"
           ];
@@ -50,6 +51,16 @@
           { name = "path"; }
           # { name = "nerdfont"; }
           { name = "buffer"; }
+          # { name = "spell"; }
+          # FIX: how do i 
+          # make this work !?!?! 
+
+          # {
+          #   name = "dictionary";
+          #   # keyword_length = 2;
+          # }
+
+
         ];
         window = {
           completion = {
@@ -57,6 +68,7 @@
               "Normal:bg,FloatBorder:bg,CursorLine:PmenuSel,Search:None";
 
             scrollbar = false;
+
             sidePadding = 0;
             border = [ "╭" "─" "╮" "│" "╯" "─" "╰" "│" ];
           };
