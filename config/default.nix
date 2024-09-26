@@ -7,7 +7,7 @@
     # ./leetcode.nix
     # NOTE: stilll testing
     # ./markdown.nix
-    ./lazygit.git
+    ./lazygit.nix
     ./helpview.nix
     ./codeium.nix
     ./dashboard.nix
