@@ -1,5 +1,6 @@
 { pkgs, ... }:
 {
+  # TODO: make it work when i nix run this project
   extraConfigLua = ''
             -- import basic default placeholder callbacks
         local skeld = require("skel-nvim.defaults")

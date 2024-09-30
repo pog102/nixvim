@@ -42,12 +42,12 @@
         highlight.multiline = true;
         highlight.multiline_context = 10;
         # EXAMPLES
-        # TODO: todo 
-        # HACK: hacky
-        # FIX: needs fixing
-        # WARN: getting errors
-        # PERF: optimize
-        # NOTE: leavig comments
+        # TODO:
+        # HACK: 
+        # FIX: 
+        # WARN:
+        # PERF: 
+        # NOTE: 
         # TEST: 
         keywords = {
           FIX = {
