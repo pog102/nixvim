@@ -29,6 +29,6 @@
     ./luasnip.nix
     ./lualine.nix
     # ./skel.nix
-    # ./skel-nvim.nix
+    ./skel-nvim.nix
   ];
 }
