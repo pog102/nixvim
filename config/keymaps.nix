@@ -60,7 +60,8 @@
     #   };
     # }
     {
-      action = "<cmd>lua vim.lsp.buf.code_action()<CR>";
+      action = "<cmd>lua  require(\"tiny-code-action\").code_action() <CR>";
+
       key = "qf";
       mode = "n";
       options = {

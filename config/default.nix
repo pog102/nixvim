@@ -29,6 +29,7 @@
     ./luasnip.nix
     ./lualine.nix
     # ./skel.nix
+    ./telescope-code-actions.nix
     ./skel-nvim.nix
   ];
 }
