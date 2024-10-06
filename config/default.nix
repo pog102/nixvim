@@ -1,11 +1,12 @@
 {
   # Import all your configuration modules here
   imports = [
+    # TODO: maeby better design for bufferline?
     ./bufferline.nix
     ./cmp.nix
     ./autocmd.nix
     # ./leetcode.nix
-    # NOTE: stilll testing
+    # NOTE: still working on it
     # ./markdown.nix
     ./lazygit.nix
     ./helpview.nix
