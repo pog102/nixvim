@@ -17,6 +17,7 @@
     ./term.nix
     ./todo.nix
     ./blanklne.nix
+    # TODO: use signatures-vim then this, less bloated
     # ./marks.nix
     ./treesitter.nix
     ./lsp.nix
@@ -36,5 +37,6 @@
     # menu options: 
     # - todo menu from todo plugin (find in the pwd for desired comment)
     # - lazygit menu
+    # - telescope marks
   ];
 }
