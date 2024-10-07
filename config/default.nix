@@ -33,6 +33,7 @@
     # ./skel.nix
     ./telescope-code-actions.nix
     ./skel-nvim.nix
+    # ./custom/nix-opt.nix
     # ./nixhash.nix
     # TODO: add menu plugin
     # menu options: 
