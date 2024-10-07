@@ -1,0 +1,2 @@
+UI: get git plugin URL
+try to automate into a boilerplate.

@@ -1,5 +1,4 @@
 {
-
   keymaps = [
 
     # {
@@ -38,6 +37,14 @@
     {
       action = "/";
       key = "<C-f>";
+      mode = "n";
+      options = {
+        silent = false;
+      };
+    }
+    {
+      action = "<cmd>lua vim.lsp.buf.rename()<CR>";
+      key = "rr";
       mode = "n";
       options = {
         silent = false;

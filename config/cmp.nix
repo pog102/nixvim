@@ -17,7 +17,7 @@
     cmp-digraphs.enable = true;
     cmp_luasnip.enable = true;
     # cmp-spell.enable = true;
-    cmp-dictionary.enable = true;
+    # cmp-dictionary.enable = true;
     cmp-nvim-lsp.enable = true;
 
     #  ū

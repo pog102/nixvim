@@ -5,11 +5,12 @@
       servers = {
         # tailwindcss.enable = true;
         # tsserver.enable = true;
+
         clangd.enable = true;
-        nixd.enable = true;
+        # nixd.enable = true;
+        nil-ls.enable = true;
         html.enable = true;
         bashls.enable = true;
-
         # cssls = {
         #   enable = true;
         # };

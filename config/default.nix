@@ -33,6 +33,7 @@
     # ./skel.nix
     ./telescope-code-actions.nix
     ./skel-nvim.nix
+    # ./nixhash.nix
     # TODO: add menu plugin
     # menu options: 
     # - todo menu from todo plugin (find in the pwd for desired comment)
