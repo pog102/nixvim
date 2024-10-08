@@ -40,5 +40,7 @@
     # - todo menu from todo plugin (find in the pwd for desired comment)
     # - lazygit menu
     # - telescope marks
+    # ./conmenu.nix
+    # ./menu.nix
   ];
 }
