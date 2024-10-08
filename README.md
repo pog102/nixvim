@@ -1,3 +1,6 @@
+<p align="center">
+    <img src="./assets/nixvim_cog.svg" alt="nixvim">
+p>
 # Wanna see how it works?
 do `nix run github:pog102/nixvim` just make sure that nix is installed on yuor system
 # How do i install it, the way you have it?
