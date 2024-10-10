@@ -12,6 +12,7 @@
     ./helpview.nix
     ./codeium.nix
     ./dashboard.nix
+    ./flash.nix
     ./conform.nix
     ./noice.nix
     ./term.nix
