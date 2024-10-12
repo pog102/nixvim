@@ -16,7 +16,7 @@
                 local sym = e == "error" and "  "
                   or (e == "warning" and "  " or "" )
                 if(sym ~= "") then
-                  s = s .. " " .. n .. sym
+                  s = s .. "" .. n .. sym
                 end
               end
               return s

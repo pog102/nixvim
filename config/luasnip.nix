@@ -7,7 +7,7 @@
       # extraConfig = { };
       fromLua = [
         {
-          paths = "/home/chad/.config/nvim/snippets";
+          # paths = "/home/chad/.config/nvim/snippets";
         }
 
       ];
