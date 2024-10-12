@@ -1,7 +1,6 @@
 {
-  plugins = {
-    leap = {
-      enable = true;
-    };
+  plugins.flash = {
+    enable = true;
   };
+
 }

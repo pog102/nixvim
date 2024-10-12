@@ -26,6 +26,7 @@
     #     # silent = true;
     #   };
     # }
+
     {
       action = "<cmd>lua require('luasnip').jump(1)<CR>";
       key = "<C-L>";
@@ -51,7 +52,15 @@
       };
     }
     {
-      action = "function() require('dap').toggle_breakpoint()";
+      action = "<cmd>lua require('flash').jump()<CR>";
+      key = "s";
+      mode = "n";
+      options = {
+        silent = true;
+      };
+    }
+    {
+      action = "lua require('dap').toggle_breakpoint";
       key = "<F1>";
       mode = "n";
       options = {
