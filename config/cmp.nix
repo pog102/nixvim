@@ -1,13 +1,14 @@
 {
+  # TODO: make window about 30px height
   extraConfigLua = ''
-    vim.api.nvim_set_hl(0, "CmpItemKindVariable", { fg = "#89ddff" })  -- Cyan
-    vim.api.nvim_set_hl(0, "CmpItemKindText", { fg = "#c3e88d" })      -- Light Green
-    vim.api.nvim_set_hl(0, "CmpItemKindFunction", { fg = "#82aaff" })  -- Light Blue
-    vim.api.nvim_set_hl(0, "CmpItemKindMethod", { fg = "#c792ea" })    -- Purple
-    vim.api.nvim_set_hl(0, "CmpItemKindKeyword", { fg = "#f07178" })   -- Red/Pink
-    vim.api.nvim_set_hl(0, "CmpItemKindSnippet", { fg = "#ffcb6b" })   -- Yellow
-    vim.api.nvim_set_hl(0, "CmpItemKindCodeium", { fg = "#56b6c2" })   -- Teal
+    vim.api.nvim_set_hl(0, "CmpItemKindVariable", { fg = vim.api.nvim_get_hl_by_name("Identifier", true).foreground })
+    vim.api.nvim_set_hl(0, "CmpItemKindText", { fg = vim.api.nvim_get_hl_by_name("String", true).foreground })
+    vim.api.nvim_set_hl(0, "CmpItemKindFunction", { fg = vim.api.nvim_get_hl_by_name("Function", true).foreground })
+    vim.api.nvim_set_hl(0, "CmpItemKindKeyword", { fg = vim.api.nvim_get_hl_by_name("Keyword", true).foreground })
+    vim.api.nvim_set_hl(0, "CmpItemKindSnippet", { fg = vim.api.nvim_get_hl_by_name("Constant", true).foreground })
+    vim.api.nvim_set_hl(0, "CmpItemKindCodeium", { fg = vim.api.nvim_get_hl_by_name("Comment", true).foreground })
   '';
+
   plugins = {
     lspkind = {
       enable = true;
