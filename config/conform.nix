@@ -45,8 +45,9 @@
         formatters_by_ft =
           {
             nix = [ "nixpkgs_fmt" ];
-            # bash = [ "shellcheck" ];
+            bash = [ "shellcheck" ];
             # sh = [ "shellcheck" ];
+            rust = [ "rustfmt" ];
             # c = [ "clang-format" ];
             javascript = [ "prettier" "prettierd" ];
             # Conform will run multiple formatters sequentially

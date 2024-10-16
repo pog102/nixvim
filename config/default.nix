@@ -14,6 +14,7 @@
     ./dashboard.nix
     ./flash.nix
     ./conform.nix
+    # ./tide.nix
     ./noice.nix
     ./term.nix
     ./todo.nix

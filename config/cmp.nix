@@ -7,6 +7,7 @@
     vim.api.nvim_set_hl(0, "CmpItemKindKeyword", { fg = vim.api.nvim_get_hl_by_name("Keyword", true).foreground })
     vim.api.nvim_set_hl(0, "CmpItemKindSnippet", { fg = vim.api.nvim_get_hl_by_name("Constant", true).foreground })
     vim.api.nvim_set_hl(0, "CmpItemKindCodeium", { fg = vim.api.nvim_get_hl_by_name("Comment", true).foreground })
+    
   '';
 
   plugins = {
@@ -14,42 +15,42 @@
       enable = true;
       # mode = "symbol";
       symbolMap = { Codeium = ""; };
+      # cmp.maxWidth = 20;
     };
+
     cmp-digraphs.enable = true;
     cmp_luasnip.enable = true;
     # cmp-spell.enable = true;
     # cmp-dictionary.enable = true;
     cmp-nvim-lsp.enable = true;
+    cmp-vsnip.enable = true;
 
-    #  ū
     cmp = {
       # snippet.expand = "luasnip";
 
       enable = true;
       autoEnableSources = true;
       settings = {
+
         formatting = {
           # format = ''
-          #   require('lspkind').cmp_format({
-          #               mode = "symbol",
-          #               maxwidth = 50,
-          #               ellipsis_char = '...',
-          #               symbol_map = { Codeium = "", }
-          #           })
+          #     function(entry, vim_item)
+          #     vim_item.abbr = string.sub(vim_item.abbr, 1, 20)
+          #     return vim_item
+          #   end
           # '';
-          fields = [
-            "abbr"
-
-            "kind"
-            # "menu"
-          ];
+          # fields = [
+          #   "abbr"
+          #   "kind"
+          #   # "menu"
+          # ];
         };
         sources = [
           { name = "codeium"; }
           { name = "luasnip"; } #For luasnip users.
           { name = "nvim_lsp"; }
           { name = "path"; }
-          # { name = "nerdfont"; }
+          { name = "vsnip"; }
           { name = "buffer"; }
           { name = "digraphs"; }
           # FIX: how do i 
@@ -68,8 +69,8 @@
               "Normal:bg,FloatBorder:bg,CursorLine:PmenuSel,Search:None";
 
             scrollbar = false;
-
-            sidePadding = 0;
+            # side_padding = 0;
+            # sidePadding = 0;
             border = [ "╭" "─" "╮" "│" "╯" "─" "╰" "│" ];
           };
 

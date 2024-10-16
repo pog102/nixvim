@@ -20,6 +20,8 @@
         clangd.enable = true;
         # nixd.enable = true;
         nil-ls.enable = true;
+        rust_analyzer.enable = true;
+        rust-analyzer.installCargo = true;
         # html.enable = true;
         bashls.enable = true;
         # cssls = {
