@@ -34,25 +34,22 @@
 
         formatting = {
           # format = ''
-          #     function(entry, vim_item)
-          #     vim_item.abbr = string.sub(vim_item.abbr, 1, 20)
-          #     return vim_item
-          #   end
+          #   vim_item.menu = ""
           # '';
-          # fields = [
-          #   "abbr"
-          #   "kind"
-          #   # "menu"
-          # ];
+          fields = [
+            "abbr"
+            "kind"
+            "menu"
+          ];
         };
         sources = [
-          { name = "codeium"; }
-          { name = "luasnip"; } #For luasnip users.
           { name = "nvim_lsp"; }
+          { name = "luasnip"; } #For luasnip users.
+          { name = "codeium"; }
           { name = "path"; }
           { name = "vsnip"; }
           { name = "buffer"; }
-          { name = "digraphs"; }
+          # { name = "digraphs"; }
           # FIX: how do i 
           # make this work !?!?! 
 

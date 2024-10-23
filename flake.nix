@@ -18,7 +18,7 @@
       ];
 
       perSystem =
-        { pkgs, system, ... }:
+        { system, ... }:
         let
           pkgs = import nixpkgs {
             system = system;
@@ -26,14 +26,18 @@
               allowUnfree = true; # Allow unfree packages
             };
           };
+
           nixvimLib = nixvim.lib.${system};
           nixvim' = nixvim.legacyPackages.${system};
           nixvimModule = {
-            inherit pkgs;
             module = import ./config; # import the module directly
             # You can use `extraSpecialArgs` to pass additional arguments to your module files
             extraSpecialArgs = {
-              # inherit (inputs) foo;
+              inherit pkgs;
+              inherit inputs;
+              nix = {
+                nixPath = [ "nixpkgs=${inputs.nixpkgs}" ]; # Add nixPath here
+              };
             };
           };
           nvim = nixvim'.makeNixvimWithModule nixvimModule;
